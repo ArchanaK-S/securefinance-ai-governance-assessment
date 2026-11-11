@@ -1,0 +1,9 @@
+,contribution_log_odds,feature_value
+txn_velocity_24h,0.4097875586128257,3.896
+avg_txn_amount_log,0.2661683735649762,11.163
+night_txn_ratio,0.06460857868815503,0.292
+new_device_flag,-0.0936154616295666,0.0
+account_age_days,1.06531406986517,168.0
+id_match_score,1.2869954163858544,0.724
+device_tier,-0.04245332242114673,1.0
+geo_mismatch_flag,-0.09700236735455381,0.0

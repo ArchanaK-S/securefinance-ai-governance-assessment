@@ -1,0 +1,257 @@
+{
+  "seed": 20260611,
+  "n_records": 20000,
+  "n_train": 14000,
+  "n_test": 6000,
+  "decision_threshold": 0.3,
+  "true_fraud_prevalence": 0.0601,
+  "baseline_auc_vs_true_fraud": 0.9525553285962861,
+  "group_sizes_test": {
+    "urban": 3734,
+    "peri_urban": 1526,
+    "rural": 740
+  },
+  "baseline_region": [
+    {
+      "region_type": "peri_urban",
+      "n": 1526,
+      "tp": 55,
+      "fp": 27,
+      "tn": 1411,
+      "fn": 33,
+      "base_rate": 0.0577,
+      "flag_rate": 0.0537,
+      "tpr": 0.625,
+      "fpr": 0.0188,
+      "precision": 0.6707,
+      "fpr_lo": 0.0123,
+      "fpr_hi": 0.0263,
+      "flag_rate_lo": 0.0426,
+      "flag_rate_hi": 0.0655,
+      "tpr_lo": 0.525,
+      "tpr_hi": 0.7253
+    },
+    {
+      "region_type": "rural",
+      "n": 740,
+      "tp": 38,
+      "fp": 29,
+      "tn": 660,
+      "fn": 13,
+      "base_rate": 0.0689,
+      "flag_rate": 0.0905,
+      "tpr": 0.7451,
+      "fpr": 0.0421,
+      "precision": 0.5672,
+      "fpr_lo": 0.0279,
+      "fpr_hi": 0.0578,
+      "flag_rate_lo": 0.0689,
+      "flag_rate_hi": 0.1122,
+      "tpr_lo": 0.6111,
+      "tpr_hi": 0.8571
+    },
+    {
+      "region_type": "urban",
+      "n": 3734,
+      "tp": 135,
+      "fp": 25,
+      "tn": 3482,
+      "fn": 92,
+      "base_rate": 0.0608,
+      "flag_rate": 0.0428,
+      "tpr": 0.5947,
+      "fpr": 0.0071,
+      "precision": 0.8438,
+      "fpr_lo": 0.0046,
+      "fpr_hi": 0.0102,
+      "flag_rate_lo": 0.0364,
+      "flag_rate_hi": 0.0495,
+      "tpr_lo": 0.5297,
+      "tpr_hi": 0.6561
+    }
+  ],
+  "baseline_gender": [
+    {
+      "gender": "female",
+      "n": 2861,
+      "tp": 112,
+      "fp": 41,
+      "tn": 2641,
+      "fn": 67,
+      "base_rate": 0.0626,
+      "flag_rate": 0.0535,
+      "tpr": 0.6257,
+      "fpr": 0.0153,
+      "precision": 0.732,
+      "fpr_lo": 0.0108,
+      "fpr_hi": 0.0201,
+      "flag_rate_lo": 0.0458,
+      "flag_rate_hi": 0.0622,
+      "tpr_lo": 0.5535,
+      "tpr_hi": 0.6989
+    },
+    {
+      "gender": "male",
+      "n": 3139,
+      "tp": 116,
+      "fp": 40,
+      "tn": 2912,
+      "fn": 71,
+      "base_rate": 0.0596,
+      "flag_rate": 0.0497,
+      "tpr": 0.6203,
+      "fpr": 0.0136,
+      "precision": 0.7436,
+      "fpr_lo": 0.0095,
+      "fpr_hi": 0.0179,
+      "flag_rate_lo": 0.0421,
+      "flag_rate_hi": 0.0573,
+      "tpr_lo": 0.5455,
+      "tpr_hi": 0.6889
+    }
+  ],
+  "disparity_region_vs_urban": [
+    {
+      "group": "peri_urban",
+      "reference": "urban",
+      "statistical_parity_diff": 0.0109,
+      "disparate_impact_ratio": 1.254,
+      "fpr_diff": 0.0116,
+      "fpr_ratio": 2.6339,
+      "tpr_diff": 0.0303,
+      "equalized_odds_gap": 0.0303
+    },
+    {
+      "group": "rural",
+      "reference": "urban",
+      "statistical_parity_diff": 0.0477,
+      "disparate_impact_ratio": 2.113,
+      "fpr_diff": 0.035,
+      "fpr_ratio": 5.9044,
+      "tpr_diff": 0.1504,
+      "equalized_odds_gap": 0.1504
+    },
+    {
+      "group": "urban",
+      "reference": "urban",
+      "statistical_parity_diff": 0.0,
+      "disparate_impact_ratio": 1.0,
+      "fpr_diff": 0.0,
+      "fpr_ratio": 1.0,
+      "tpr_diff": 0.0,
+      "equalized_odds_gap": 0.0
+    }
+  ],
+  "disparity_gender_vs_male": [
+    {
+      "group": "female",
+      "reference": "male",
+      "statistical_parity_diff": 0.0038,
+      "disparate_impact_ratio": 1.0761,
+      "fpr_diff": 0.0017,
+      "fpr_ratio": 1.1282,
+      "tpr_diff": 0.0054,
+      "equalized_odds_gap": 0.0054
+    },
+    {
+      "group": "male",
+      "reference": "male",
+      "statistical_parity_diff": 0.0,
+      "disparate_impact_ratio": 1.0,
+      "fpr_diff": 0.0,
+      "fpr_ratio": 1.0,
+      "tpr_diff": 0.0,
+      "equalized_odds_gap": 0.0
+    }
+  ],
+  "proxy_test": [
+    {
+      "feature_set": "ALL model features",
+      "auc_predicting_rural": 0.8056
+    },
+    {
+      "feature_set": "only id_match_score",
+      "auc_predicting_rural": 0.7131
+    },
+    {
+      "feature_set": "only device_tier",
+      "auc_predicting_rural": 0.7241
+    },
+    {
+      "feature_set": "only geo_mismatch_flag",
+      "auc_predicting_rural": 0.5493
+    },
+    {
+      "feature_set": "all features except suspects",
+      "auc_predicting_rural": 0.4946
+    }
+  ],
+  "counterfactual_review_rural_false_positives": {
+    "n_cases": 29,
+    "swapped_features": [
+      "id_match_score",
+      "device_tier",
+      "geo_mismatch_flag"
+    ],
+    "share_no_longer_flagged": 1.0
+  },
+  "audit_calibrated_thresholds": {
+    "peri_urban": 0.46,
+    "rural": 0.52,
+    "urban": 0.3
+  },
+  "mitigation": [
+    {
+      "variant": "1 Baseline",
+      "fpr_urban": 0.0071,
+      "fpr_peri_urban": 0.0188,
+      "fpr_rural": 0.0421,
+      "fpr_ratio_rural_vs_urban": 5.9044,
+      "tpr_urban": 0.5947,
+      "tpr_rural": 0.7451,
+      "disparate_impact_rural_vs_urban": 2.113,
+      "recall_overall": 0.623,
+      "precision_overall": 0.7379,
+      "flag_rate_overall": 0.0515
+    },
+    {
+      "variant": "2 Reweighing",
+      "fpr_urban": 0.0071,
+      "fpr_peri_urban": 0.0174,
+      "fpr_rural": 0.0334,
+      "fpr_ratio_rural_vs_urban": 4.6828,
+      "tpr_urban": 0.6079,
+      "tpr_rural": 0.7255,
+      "disparate_impact_rural_vs_urban": 1.8574,
+      "recall_overall": 0.6366,
+      "precision_overall": 0.7614,
+      "flag_rate_overall": 0.051
+    },
+    {
+      "variant": "3 Drop device+geo",
+      "fpr_urban": 0.0083,
+      "fpr_peri_urban": 0.016,
+      "fpr_rural": 0.0377,
+      "fpr_ratio_rural_vs_urban": 4.5634,
+      "tpr_urban": 0.5991,
+      "tpr_rural": 0.7647,
+      "disparate_impact_rural_vs_urban": 1.9878,
+      "recall_overall": 0.6311,
+      "precision_overall": 0.7476,
+      "flag_rate_overall": 0.0515
+    },
+    {
+      "variant": "4 Audit-calibrated thresholds",
+      "fpr_urban": 0.0071,
+      "fpr_peri_urban": 0.0035,
+      "fpr_rural": 0.0044,
+      "fpr_ratio_rural_vs_urban": 0.6108,
+      "tpr_urban": 0.5947,
+      "tpr_rural": 0.5294,
+      "disparate_impact_rural_vs_urban": 0.9461,
+      "recall_overall": 0.5546,
+      "precision_overall": 0.8602,
+      "flag_rate_overall": 0.0393
+    }
+  ]
+}

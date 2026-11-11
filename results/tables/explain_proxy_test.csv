@@ -1,0 +1,6 @@
+feature_set,auc_predicting_rural
+ALL model features,0.8055512769952868
+only id_match_score,0.7130619634511968
+only device_tier,0.7241213132339985
+only geo_mismatch_flag,0.5492913964119854
+all features except suspects,0.49463783074311607

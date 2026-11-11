@@ -1,0 +1,4 @@
+region_type,txn_velocity_24h,avg_txn_amount_log,night_txn_ratio,new_device_flag,account_age_days,id_match_score,device_tier,geo_mismatch_flag
+peri_urban,2.35,10.228,0.258,0.164,579.493,0.847,1.808,0.12
+rural,2.327,10.199,0.256,0.153,579.733,0.803,1.423,0.204
+urban,2.342,10.228,0.254,0.161,580.909,0.87,2.155,0.083

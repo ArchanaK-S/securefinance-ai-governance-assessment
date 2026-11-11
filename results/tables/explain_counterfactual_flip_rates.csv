@@ -1,0 +1,6 @@
+swapped,n_cases,share_no_longer_flagged
+id_match_score,29,0.9655172413793104
+device_tier,29,0.0
+geo_mismatch_flag,29,0.27586206896551724
+account_age_days,29,0.7241379310344828
+id_match_score+device_tier+geo_mismatch_flag,29,1.0

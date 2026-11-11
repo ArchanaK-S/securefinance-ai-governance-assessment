@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this assessment material, please cite it as below."
+title: "SecureFinance Africa - AI Ethics, Governance and Compliance Assessment (AICS-201, Assignment 01)"
+type: software
+authors:
+  - family-names: "[Surname]"
+    given-names: "[Given names]"
+version: 1.0.0
+date-released: 2026-11-11
+license: MIT
+abstract: "Synthetic-data fairness evaluation, AI risk register and governance documentation for the fictional SecureFinance Africa platform."
