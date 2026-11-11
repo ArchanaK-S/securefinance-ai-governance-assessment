@@ -1,6 +1,6 @@
 # SecureFinance Africa - AI Ethics, Governance and Legal Compliance Assessment
 
-[![CI](https://github.com/YOUR-USERNAME/securefinance-ai-governance-assessment/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR-USERNAME/securefinance-ai-governance-assessment/actions/workflows/ci.yml)
+[![CI](https://github.com/ArchanaK-S/securefinance-ai-governance-assessment/actions/workflows/ci.yml/badge.svg)](https://github.com/ArchanaK-S/securefinance-ai-governance-assessment/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Data](https://img.shields.io/badge/data-100%25%20synthetic-orange)
@@ -34,7 +34,7 @@ Details: [`results/README.md`](results/README.md).
 
 ## Quick start
 ```bash
-git clone https://github.com/YOUR-USERNAME/securefinance-ai-governance-assessment.git
+git clone https://github.com/ArchanaK-S/securefinance-ai-governance-assessment.git
 cd securefinance-ai-governance-assessment
 python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
 python -m pip install -e ".[dev]"
