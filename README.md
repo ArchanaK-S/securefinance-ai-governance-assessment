@@ -59,4 +59,4 @@ NIST AI RMF 1.0 (NIST AI 100-1, 2023) - Nigeria Data Protection Act 2023 and NDP
 UNESCO Recommendation on the Ethics of AI (2021) - OECD AI Principles (2019, rev. 2024). Full list in the report.
 
 ## Licence and author
-MIT - see [`LICENSE`](LICENSE). Author: [Student Name], ICDFA AICS-201. Cite via [`CITATION.cff`](CITATION.cff).
+MIT - see [`LICENSE`](LICENSE). Author: Archana K S, ICDFA AICS-201. Cite via [`CITATION.cff`](CITATION.cff).
